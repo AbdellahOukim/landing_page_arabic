@@ -1,0 +1,473 @@
+:root {
+    --mainColor : #0083E6 ;
+    --padding : 60px ;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #EEE;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #03A9F4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a , a:visited {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.main-heading {
+    color: var(--mainColor);
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Start nav-bar  */
+nav {
+    height: 70px;
+    width: 100%;
+    background-color: var(--mainColor);
+    color: #FFF;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .container .logo {
+    width: 75px;
+    cursor: pointer;
+}
+
+nav .container .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+nav .container .nav-links li {
+    padding: 12px 15px;
+}
+
+nav .container .nav-links li a {
+    color: rgba(238, 238, 238, 0.89);
+    transition: 0.2s;
+}
+
+nav .container .nav-links li a.active ,
+nav .container .nav-links li a:hover {
+    color: #FFF;
+}
+
+/* End nav-bar  */
+
+/* Start landing  */
+.landing {
+    height: calc(100vh - 70px);
+    width: 100%;
+    background-image: url(../images/landing4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+    position: relative;
+    z-index: 1;
+}
+
+.landing .overlay {
+    background-color: rgba(0, 0, 0, 0.575);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.landing .land-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+
+.landing .land-content h1 {
+    margin: 0;
+}
+
+.landing .land-content h1  span {
+    color: var(--mainColor);
+}
+
+.landing .land-content p {
+    word-spacing: 3px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+/* End landing  */
+
+/* Start informations  */
+.informations {
+    background-color: #FFF;
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+}
+.informations h3 {
+    font-weight: 700;
+}
+
+.informations .container {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.informations .container > div {
+    width: 48%;
+}
+
+.informations .container .info-img img {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.informations .info-img img:hover {
+    transform: scale(1.05);
+}
+
+.informations li {
+    font-size: 17px;
+    word-spacing: 1px;
+    line-height: 2;
+}
+
+.informations li svg {
+    color: var(--mainColor);
+    margin-left: 10px;
+}
+
+.informations a {
+    color: var(--mainColor);
+    font-weight: 500;
+}
+/* End informations  */
+/* Start Sections  */
+
+.sections {
+    background-color: #EEE;
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+}
+
+.sections .container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sections .container .box {
+    width: 30%;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.sections .container .box img {
+    width: 200px;
+}
+/* End Sections  */
+
+/* Start questions  */
+.questions {
+    background-color: #FFF;
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+}
+
+.questions .container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.ask-box {
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-bottom: solid 1px #EEE;
+}
+
+.ask-box h2 {
+    width: 100%;
+    margin: 0 0 15px 0;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: #495057;
+}
+.ask-box h2 svg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--mainColor);
+}
+
+.ask-box p {
+    height: 0px;
+    margin: 0 ;
+    font-family: 'Vazirmatn', sans-serif;
+    transition: 0.4s;
+    font-size: 15px;
+    opacity: 0;
+}
+
+.ask-box p.show {
+    height: 25px;
+    opacity: 1;
+}
+/* End questions  */
+
+/* Start join-us  */
+.join-us {
+    min-height: 220px;
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    background-color: var(--mainColor);
+    position: relative;
+}
+
+.join-us > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: #FFF;
+}
+
+.join-us > div p {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.join-us > div .btn {
+    border: none;
+    outline: none;
+    background-color: #FFF;
+    color: var(--mainColor);
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/* End join-us  */
+/* Start Footer  */
+
+footer {
+    padding-top: var(--padding);
+}
+
+footer .container .all-sections {
+    display: flex;
+    column-gap: 40px;
+    margin-bottom: 10px;
+}
+
+footer .container .all-sections  > div {
+    width: 30%;
+}
+
+footer .container .all-sections h2 {
+    width: fit-content;
+    position: relative;
+    padding: 10px 0;
+}
+
+footer .container .all-sections h2::after {
+    content: "";
+    height: 4px;
+    width: 70%;
+    background-color: var(--mainColor);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+footer  .all-sections  > div p {
+    line-height: 1.6 ;
+}
+
+footer  .all-sections  > div li  {
+    line-height: 2;
+}
+
+footer .contact li {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .contact svg {
+    font-size: 22px;
+    color: var(--mainColor);
+    transform: translateY(25%);
+    cursor: pointer;
+}
+
+footer .links li a {
+    color: var(--mainColor);
+}
+
+footer .rights {
+    background-color: #495057;
+    color: #FFF;
+    display: flex;
+    padding: 20px 0;
+    word-spacing: 2px;
+    font-size: 18px;
+}
+
+footer .rights p {
+    margin: auto;
+}
+
+/* ------------ Page singuo ----------------  */
+.main-singup {
+    min-height: calc(100vh - 70px);
+    position: relative;
+}
+
+.main-singup h1 {
+    margin: 20px 0;
+    text-align: center;
+    color: var(--mainColor);
+    letter-spacing: 2px;
+}
+
+.main-singup .box-content {
+    margin-top: 20px;
+    min-height: 500px ;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-singup .box-content > div {
+    width: 46%;
+}
+
+.main-singup .box-content > div form {
+    height: 100%;
+    width: 100%;
+    padding: 20px ;
+    background-color: #EEE;
+}
+
+.main-singup .box-content  form .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-singup .box-content  form .error {
+    color: red;
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.main-singup .box-content  form .name > div {
+    width: 48%;
+}
+
+.main-singup .box-content  form .row {
+    margin-top: 10px;
+}
+
+.main-singup .box-content  form  input[type="text"] , 
+.main-singup .box-content  form  input[type="password"] {
+    outline: none;
+    height: 35px;
+    width: 100%;
+    margin: 10px 0;
+    padding-right: 8px;
+}
+
+.main-singup .box-content  form  input[type="text"]:focus {
+    outline: var(--mainColor) 1px solid;
+    border: none;
+}
+
+.main-singup .box-content  form  input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    transform: translateY(25%);
+}
+.main-singup .box-content  form  label:last-child {
+    margin-right: 10px;
+}
+
+.main-singup .box-content  form  span {
+    color: red;
+    font-size : 18px;
+}
+
+.main-singup .box-content  form  input[type="submit"] {
+    margin-top: 20px;
+    padding: 12px 15px;
+    background-color: var(--mainColor);
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-singup .box-content  form a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.main-singup .box-content img {
+    width: 100%;
+}

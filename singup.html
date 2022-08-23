@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>منصة AO التعليمية | التسجيل</title>
+    <link rel="icon" href="tools/icon-logo.png" type="image/icon type" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body dir="rtl">
+    <!-- start nav_bar  -->
+    <nav>
+      <div class="container">
+        <a href="index.html">
+          <img class="logo" src="tools/logo.png" alt="logo" title=" منصة AO التعليمية" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">الرئيسية </a></li>
+          <li><a href="#" class="active">التسجيل </a></li>
+          <li><a href="login.html">تسجيل الدخول </a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End nav-bar  -->
+    <!-- Start main  -->
+    <main class="main-singup">
+        <h1>إنشاء حساب جديد </h1>
+        <div class="box-content">
+            <div class="image">
+                <img src="images/singup.png" alt="">
+            </div>
+            <div class="sing">
+                <form action="">
+                    <div class="name">
+                        <div>
+                            <label>الاسم الشخصي <span>*</span></label> <br>
+                            <input id="fName"  type="text" placeholder="الاسم الشخصي ">
+                            <div class="error" id="fnError">
+  
+                            </div>
+                        </div>
+                        <div>
+                            <label>الاسم العائلي <span>*</span> </label> <br>
+                            <input id="lName" type="text" placeholder="الاسم العائلي">
+                            <div class="error" id="lnError">
+  
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="row">
+                        <label>البريد الإلكتروني <span>*</span></label> <br>
+                        <input id="email" type="text" placeholder="بريدك الالكتروني ">
+                        <div class="error" id="emError">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label>تأكيد البريد الإلكتروني <span>*</span></label> <br>
+                        <input id="confEmail" type="text" placeholder="قم بتأكيد بريدك الالكتروني ">
+                        <div class="error" id="ceError">
+                        </div>
+                    </div>
+                    <div  class="row">
+                        <label>كلمة المرور <span>*</span></label> <br>
+                        <input id="password" type="password" placeholder="أدخل كلمة المرور ">
+                        <div class="error" id="passError">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input id="check" type="checkbox">
+                        <label>قرأت وأوافق على شروط الاستخدام و بيان الخصوصية</label>
+                        <div class="error" id="checkError"></div>
+                    </div>
+                    <input id="submit" type="submit" value="التسجيل">
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- End main  -->
+    <!-- Start footer  -->
+    <footer>
+        <div class="rights">
+          <p>جميع الحقوق محفوظة لمنصة <span>AO</span> التعليمية 2022 &#169; </p>
+        </div>
+      </footer>
+    
+
+    <script src="js/all.min.js"></script>
+    <script src="js/singup.js"></script>
+  </body>
+</html>
